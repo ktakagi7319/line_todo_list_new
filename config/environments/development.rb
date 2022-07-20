@@ -67,4 +67,11 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  # ngrok を立ち上げた際に発行される URL のドメイン部分（https:// 以降)を以下のように記載する
+  config.hosts = ["4757-60-71-179-82.jp.ngrok.io", "localhost"]
+
+  #ホワイトリストにIPアドレスの追加
+  config.web_console.whitelisted_ips = '147.92.150.195'
+
 end
